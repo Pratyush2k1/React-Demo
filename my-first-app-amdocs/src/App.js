@@ -1,28 +1,53 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import First from './components/First';
+//import First from './components/First';
+//import { useState } from 'react';
+import React from 'react';
+import Car from './components/Car';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <First name="Praty"/>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to React js
-        </a>
-        
-      </header>
-    </div>
-  );
+//   const [id,setId] = useState("");
+//   const [name,setName]= useState("");
+//   const [salary,setSalary]= useState("");
+//   const [department,setDepartment]= useState("");
+//   const handleSubmit = (event) => { 
+//     event.preventDefault();
+//   };
+ 
+//  return (
+//   <div>
+//     <form onSubmit={handleSubmit}>
+//       <label> ID:
+//         <input type="number" value={id} onChange={(e) => setId(e.target.value)} />
+//       </label>
+//       <br/>
+      
+//       <label> Name:
+//         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+//       </label>
+//       <br/>
+
+//       <label> Salary:
+//         <input type="number" value={salary} onChange={(e) => setSalary(e.target.value)} />
+//       </label>
+//       <br/>
+
+//       <label> Department:
+//         <input type="text" value={department} onChange={(e) => setDepartment(e.target.value)} />
+//       </label>
+//         <br/>
+
+//        <input type="submit" value="Add Employee" />
+ 
+//     </form>
+ 
+//      {id} {name} {salary} {department}
+ 
+//   </div>
+//  );
+return ( 
+  <Car />
+)
 }
 
 export default App;
